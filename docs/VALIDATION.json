@@ -3,6 +3,13 @@
   "GPU_engine_tested": false,
   "engine_executable": "External local test executable; set your own path on Churchill",
   "engine_version": "Vina 1.2.7",
+  "environment_bootstrap": {
+    "create_flags_verified": true,
+    "micromamba_version": "2.10.0-0",
+    "official_binary_sha256_verified": true,
+    "remote_DNS_or_mirror_connectivity_verified": false,
+    "remote_environment_solved": false
+  },
   "fixtures_are_real_ZINC_records": false,
   "latest_smoke_run_real_Vina_jobs_DONE": 4,
   "local_test_environment": {
@@ -43,9 +50,12 @@
       "resume without docking again",
       "analysis-only recovery after engine completion",
       "modified completed output rejected",
-      "GPU busy holds dispatch"
+      "GPU busy holds dispatch",
+      "mirror substitution preserves package version pins",
+      "bootstrap rejects changed binary digest",
+      "bootstrap dry run writes no files and avoids blocked domain"
     ],
     "failed": 0,
-    "passed": 12
+    "passed": 15
   }
 }

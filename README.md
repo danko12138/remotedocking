@@ -24,6 +24,24 @@ cp configs/churchill.example.json configs/local.json
 
 没有 SSH key 时可用 HTTPS 克隆：`git clone https://github.com/danko12138/remotedocking.git`。
 
+**没有 Conda，或下载报 `Could not resolve host: conda.anaconda.org`：** 可用独立安装脚本，从官方 GitHub Release 下载固定版本 Micromamba 并验证 SHA256，在个人目录安装环境。选择清华 conda-forge 镜像绕过该 Anaconda 域名：
+
+```bash
+git pull --ff-only
+python3 tools/setup_environment.py --channel tuna
+```
+
+默认安装到仓库上级目录的 `.abc-zinc-tools` 与 `envs/abc-zinc22`；不修改 DNS、`.bashrc`、系统 Python 或共享程序，也不启动 docking。清华镜像的可达性和版本同步情况仍需远程实际确认；脚本遇到失败即停止，保留错误。可先加 `--dry-run` 查看执行计划。包版本不会因换镜像而自动放宽。
+
+安装后无需 activate，可使用：
+
+```bash
+../.abc-zinc-tools/bin/micromamba-2.10.0-0 --no-rc \
+  -r ../.abc-zinc-tools/root run -p ../envs/abc-zinc22 zincscreen --help
+```
+
+来源：[Micromamba 官方 GitHub Releases](https://github.com/mamba-org/micromamba-releases/releases/tag/2.10.0-0)、[清华镜像配置说明](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)。
+
 `environment.yml` 固定了本地测试所用的主要版本，**尚未在 Churchill 求解安装，不是远程平台锁文件**。可使用现有兼容环境，先执行自检并留存实际包版本。GNINA 为外部程序，仓库和环境文件没有携带它的二进制或 CUDA 库。
 
 编辑 `configs/local.json`：
