@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# PDBQT/SDF are frozen scientific inputs. Preserve bytes and their original padding.
+data/** -text -whitespace
