@@ -4,6 +4,14 @@
   "engine_executable": "External local test executable; set your own path on Churchill",
   "engine_version": "Vina 1.2.7",
   "environment_bootstrap": {
+    "canonical_basename_run_smoke": {
+      "canonical_micromamba_basename_exit_code": 0,
+      "correct_prefix_python_verified": true,
+      "fixture": "isolated prefix and cache with Python symlink and system-only PATH; no package install or production environment used",
+      "old_MAMBA_EXE_failure_reproduced": true,
+      "old_versioned_basename_exit_code": 127,
+      "status": "PASS"
+    },
     "create_flags_verified": true,
     "micromamba_version": "2.10.0-0",
     "official_binary_sha256_verified": true,
@@ -53,9 +61,13 @@
       "GPU busy holds dispatch",
       "mirror substitution preserves package version pins",
       "bootstrap rejects changed binary digest",
-      "bootstrap dry run writes no files and avoids blocked domain"
+      "bootstrap dry run writes no files and avoids blocked domain",
+      "cached bootstrap migrates to canonical executable name without redownload",
+      "stale MAMBA_EXE overridden for subprocess activation",
+      "existing environment recovery skips DNS and environment recreation",
+      "target Python prefix verified before project installation"
     ],
     "failed": 0,
-    "passed": 15
+    "passed": 18
   }
 }

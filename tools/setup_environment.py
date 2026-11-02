@@ -4,6 +4,7 @@ from pathlib import Path
 import argparse
 import hashlib
 import json
+import os
 import platform
 import shutil
 import socket
@@ -41,6 +42,36 @@ def check_download(path, expected=EXPECTED_SHA256):
         raise ValueError("Micromamba SHA256 mismatch; downloaded file will not be executed")
 
 
+def ensure_micromamba(tools):
+    # `micromamba run` generates shell activation code which requires this basename.
+    # Keep the version/hash in metadata instead of renaming the executable.
+    binary = tools / "bin/micromamba"
+    if binary.exists():
+        check_download(binary)
+        return binary
+    binary.parent.mkdir(parents=True, exist_ok=True)
+    temp = binary.with_suffix(".download")
+    cached = tools / "bin" / ("micromamba-" + VERSION)
+    if cached.exists():
+        check_download(cached)
+        shutil.copyfile(cached, temp)
+    else:
+        if shutil.which("curl") is None:
+            raise RuntimeError("curl is required for downloading the verified executable")
+        subprocess.run(["curl", "-fL", "--connect-timeout", "15", "--max-time", "300", "--retry", "2",
+                        URL, "-o", str(temp)], check=True)
+    check_download(temp)
+    temp.chmod(0o755)
+    temp.replace(binary)
+    return binary
+
+
+def execution_environment(binary):
+    # Do not inherit a stale MAMBA_EXE or depend on interactive shell init.
+    return {**os.environ, "MAMBA_EXE": str(binary),
+            "PATH": str(binary.parent) + os.pathsep + os.environ.get("PATH", "")}
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--channel", choices=CHANNELS, default="official")
@@ -53,7 +84,7 @@ def main(argv=None):
     repo = Path(__file__).resolve().parents[1]
     tools = (args.tools_root or repo.parent / ".abc-zinc-tools").expanduser().resolve()
     prefix = (args.prefix or repo.parent / "envs/abc-zinc22").expanduser().resolve()
-    binary = tools / "bin" / ("micromamba-" + VERSION)
+    binary = tools / "bin/micromamba"
     root = tools / "root"
     channel = CHANNELS[args.channel]
     text = mirror_environment((repo / "environment.yml").read_text(), channel)
@@ -61,44 +92,36 @@ def main(argv=None):
     create = [str(binary), "--no-rc", "-r", str(root), "create", "--override-channels",
               "--strict-channel-priority", "-c", channel, "-y", "-p", str(prefix), "-f", str(envfile)]
     base = [str(binary), "--no-rc", "-r", str(root), "run", "-p", str(prefix)]
+    check_prefix = base + ["python", "-c", "import sys; from pathlib import Path; assert Path(sys.prefix).resolve() == Path(sys.argv[1]).resolve(), 'Wrong Python environment'; print('ENVIRONMENT_PYTHON_OK')", str(prefix)]
     install = base + ["python", "-m", "pip", "install", "--no-index", "--no-build-isolation", "--no-deps", "-e", str(repo)]
     validate = base + ["python", "-c", "import sys,rdkit,numpy,scipy; from openbabel import openbabel; print('Python:',sys.executable); print('DEPENDENCIES_OK')"]
     plan = {"micromamba_url": URL, "micromamba_sha256": EXPECTED_SHA256,
             "tools_root": str(tools), "prefix": str(prefix), "channel": channel,
-            "create": create, "install": install, "validate": validate,
+            "create": create, "check_prefix": check_prefix, "install": install, "validate": validate,
             "changes_system_configuration": False, "docking_jobs_submitted": 0}
     if args.dry_run:
         print(json.dumps(plan, indent=2))
         return
     try:
-        if shutil.which("curl") is None:
-            raise RuntimeError("curl is required for downloading the verified executable")
-        for host in ("github.com", urlparse(channel).hostname):
-            try:
-                socket.getaddrinfo(host, 443)
-            except socket.gaierror as exc:
-                raise RuntimeError("DNS resolution failed for " + host + "; no DNS settings were changed") from exc
         tools.mkdir(parents=True, exist_ok=True)
-        binary.parent.mkdir(parents=True, exist_ok=True)
-        if binary.exists():
-            check_download(binary)
-        else:
-            temp = binary.with_suffix(".download")
-            subprocess.run(["curl", "-fL", "--connect-timeout", "15", "--max-time", "300", "--retry", "2",
-                            URL, "-o", str(temp)], check=True)
-            check_download(temp)
-            temp.chmod(0o755)
-            temp.replace(binary)
-        subprocess.run([str(binary), "--version"], check=True)
+        ensure_micromamba(tools)
+        env = execution_environment(binary)
+        subprocess.run([str(binary), "--version"], check=True, env=env)
         envfile.write_text(text)
         if (prefix / "conda-meta/history").exists():
             print("Existing environment retained; proceeding to import checks/installing this project only.", flush=True)
         elif prefix.exists():
             raise RuntimeError("Incomplete/unrecognized prefix exists: " + str(prefix) + "; inspect it or use --prefix with a new path")
         else:
-            subprocess.run(create, check=True)
-        subprocess.run(install, check=True)
-        subprocess.run(validate, check=True)
+            host = urlparse(channel).hostname
+            try:
+                socket.getaddrinfo(host, 443)
+            except socket.gaierror as exc:
+                raise RuntimeError("DNS resolution failed for " + host + "; no DNS settings were changed") from exc
+            subprocess.run(create, check=True, env=env)
+        subprocess.run(check_prefix, check=True, env=env)
+        subprocess.run(install, check=True, env=env)
+        subprocess.run(validate, check=True, env=env)
         (tools / "SETUP_RECEIPT.json").write_text(json.dumps({**plan, "status": "DEPENDENCIES_OK", "environment_file_sha256": sha(envfile)}, indent=2) + "\n")
         print("Setup complete. Run the project through:", flush=True)
         print(" ".join(base + ["zincscreen", "--help"]))

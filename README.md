@@ -36,11 +36,13 @@ python3 tools/setup_environment.py --channel tuna
 安装后无需 activate，可使用：
 
 ```bash
-../.abc-zinc-tools/bin/micromamba-2.10.0-0 --no-rc \
+../.abc-zinc-tools/bin/micromamba --no-rc \
   -r ../.abc-zinc-tools/root run -p ../envs/abc-zinc22 zincscreen --help
 ```
 
 来源：[Micromamba 官方 GitHub Releases](https://github.com/mamba-org/micromamba-releases/releases/tag/2.10.0-0)、[清华镜像配置说明](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)。
+
+如果旧脚本在 `Transaction finished` 后报 `filename must be mamba or micromamba`，更新仓库并重新运行同一个安装命令即可。修复版复用已校验的下载，把执行入口设为 `bin/micromamba`，保留现有 conda 环境，仅继续项目安装和依赖检查；已有环境无需重新创建，也不要求修改 shell 初始化。
 
 `environment.yml` 固定了本地测试所用的主要版本，**尚未在 Churchill 求解安装，不是远程平台锁文件**。可使用现有兼容环境，先执行自检并留存实际包版本。GNINA 为外部程序，仓库和环境文件没有携带它的二进制或 CUDA 库。
 
