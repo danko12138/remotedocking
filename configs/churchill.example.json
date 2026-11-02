@@ -1,0 +1,20 @@
+{
+  "workspace": "/home/zyc/workspaces/member26/abcb1_abcg2_zinc22_work",
+  "zinc_root": "/home/zyc/projects/uhrf1_usp7/data/compounds/zinc22_broad/raw",
+  "receptors_manifest": "../data/receptors/manifest.json",
+  "references_manifest": "../data/references/manifest.json",
+  "engine": {
+    "backend": "gnina",
+    "executable": "gnina",
+    "use_gpu": true,
+    "device": 0,
+    "cpu_threads": 2,
+    "exhaustiveness": 8,
+    "num_modes": 10,
+    "energy_range": 5.0,
+    "timeout_seconds": 1800
+  },
+  "gpu": {"min_free_mib": 12288, "max_utilization_percent": 30},
+  "min_free_disk_gib": 50,
+  "preparation": {"timeout_seconds": 120, "memory_limit_gib": 4, "seed": 42}
+}

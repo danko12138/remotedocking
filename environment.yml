@@ -1,0 +1,16 @@
+name: abc-zinc22
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - rdkit=2026.03.1
+  - openbabel=3.2.1
+  - numpy=2.5.3
+  - scipy=1.18.1
+  - vina=1.2.7
+  - pytest=9.1.1
+  - pip
+  - setuptools>=68
+  - wheel
+# These are the tested local package versions, not a solved Churchill lockfile.
+# GNINA is configured as an external executable; no binary/CUDA bundle is included.

@@ -1,0 +1,216 @@
+{
+  "created_utc": "2026-11-02T02:42:04.374053+00:00",
+  "receptors": [
+    {
+      "apo": true,
+      "box_file": "6VXF/box.json",
+      "box_file_sha256": "064593401d29e1431ad2598f0c446a087707ee96377a6e1dd05061da91e25959",
+      "frame": "V1-original",
+      "historical_results": {
+        "gnina": {
+          "apo": "True",
+          "original_method_status": "APO_PROBE_ENGINEERING_PASS",
+          "reason": "",
+          "top10_status": "APO_PROBE_ENGINEERING_ONLY"
+        },
+        "vina": {
+          "apo": "True",
+          "original_method_status": "APO_PROBE_ENGINEERING_PASS",
+          "reason": "",
+          "top10_status": "APO_PROBE_ENGINEERING_ONLY"
+        }
+      },
+      "id": "6VXF",
+      "limitations": [
+        "His/protonation conventions retained; no full hydrogen network validation",
+        "Existing native pose recovery results unchanged; apo has probe-only evidence",
+        "PRIMARY_EXISTING_QC is a relative workflow tier, not proof of defect-free chemistry"
+      ],
+      "origin": {
+        "campaign": "docking_8372_20261025",
+        "pdb_entry": "6VXF",
+        "receptor_source_relative": "reference_work/Phase6_receptor_lastpass_20261018T041858Z/PRIMARY_EXISTING_INPUTS/6VXF/receptor.pdbqt"
+      },
+      "pdbqt": "6VXF/receptor.pdbqt",
+      "pdbqt_sha256": "3f0f2f7c31a4921a58c7aae38e0d88155dd45440728db02225bf6f3250b08781",
+      "scientific_admission": false,
+      "target": "ABCG2"
+    },
+    {
+      "apo": false,
+      "box_file": "6VXJ/box.json",
+      "box_file_sha256": "ce99fea6813918756535e0ae81649afe501c7ee39ee7d8d7d98b9fbea7900f27",
+      "frame": "V1-original",
+      "historical_results": {
+        "gnina": {
+          "apo": "False",
+          "original_method_status": "FAIL",
+          "reason": "",
+          "top10_status": "TOP10_COVERAGE_PASS"
+        },
+        "vina": {
+          "apo": "False",
+          "original_method_status": "PASS",
+          "reason": "",
+          "top10_status": "TOP10_COVERAGE_PASS"
+        }
+      },
+      "id": "6VXJ",
+      "limitations": [
+        "His/protonation conventions retained; no full hydrogen network validation",
+        "Existing native pose recovery results unchanged; apo has probe-only evidence",
+        "PRIMARY_EXISTING_QC is a relative workflow tier, not proof of defect-free chemistry"
+      ],
+      "origin": {
+        "campaign": "docking_8372_20261025",
+        "pdb_entry": "6VXJ",
+        "receptor_source_relative": "reference_work/Phase6_receptor_lastpass_20261018T041858Z/PRIMARY_EXISTING_INPUTS/6VXJ/receptor.pdbqt"
+      },
+      "pdbqt": "6VXJ/receptor.pdbqt",
+      "pdbqt_sha256": "848bc535530b34f621f074337960b437031ac42d8f97108ed0f9a948ad29686b",
+      "scientific_admission": false,
+      "target": "ABCG2"
+    },
+    {
+      "apo": false,
+      "box_file": "7OJ8/box.json",
+      "box_file_sha256": "948350602abfb38ad4d87074f2cd80fc1c7a20f97b1c74de55930165f85e4a5d",
+      "frame": "V1-original",
+      "historical_results": {
+        "gnina": {
+          "apo": "False",
+          "original_method_status": "FAIL",
+          "reason": "",
+          "top10_status": "TOP10_COVERAGE_PASS"
+        },
+        "vina": {
+          "apo": "False",
+          "original_method_status": "PASS",
+          "reason": "",
+          "top10_status": "TOP10_COVERAGE_PASS"
+        }
+      },
+      "id": "7OJ8",
+      "limitations": [
+        "His/protonation conventions retained; no full hydrogen network validation",
+        "Existing native pose recovery results unchanged; apo has probe-only evidence",
+        "PRIMARY_EXISTING_QC is a relative workflow tier, not proof of defect-free chemistry"
+      ],
+      "origin": {
+        "campaign": "docking_8372_20261025",
+        "pdb_entry": "7OJ8",
+        "receptor_source_relative": "reference_work/Phase6_receptor_lastpass_20261018T041858Z/PRIMARY_EXISTING_INPUTS/7OJ8/receptor.pdbqt"
+      },
+      "pdbqt": "7OJ8/receptor.pdbqt",
+      "pdbqt_sha256": "acad55090bd0678a0741811f1efed11478552622f82e68b3277ad67a0457b9c5",
+      "scientific_admission": false,
+      "target": "ABCG2"
+    },
+    {
+      "apo": true,
+      "box_file": "9CR8/box.json",
+      "box_file_sha256": "93dd1d2b0ace72e36764d02e20b78dc0c647860ce0bd7fb521ddde530ece6cd2",
+      "frame": "V1-original",
+      "historical_results": {
+        "gnina": {
+          "apo": "True",
+          "original_method_status": "APO_PROBE_ENGINEERING_PASS",
+          "reason": "",
+          "top10_status": "APO_PROBE_ENGINEERING_ONLY"
+        },
+        "vina": {
+          "apo": "True",
+          "original_method_status": "APO_PROBE_ENGINEERING_PASS",
+          "reason": "",
+          "top10_status": "APO_PROBE_ENGINEERING_ONLY"
+        }
+      },
+      "id": "9CR8",
+      "limitations": [
+        "His/protonation conventions retained; no full hydrogen network validation",
+        "Existing native pose recovery results unchanged; apo has probe-only evidence",
+        "PRIMARY_EXISTING_QC is a relative workflow tier, not proof of defect-free chemistry"
+      ],
+      "origin": {
+        "campaign": "docking_8372_20261025",
+        "pdb_entry": "9CR8",
+        "receptor_source_relative": "reference_work/Phase6_receptor_lastpass_20261018T041858Z/PRIMARY_EXISTING_INPUTS/9CR8/receptor.pdbqt"
+      },
+      "pdbqt": "9CR8/receptor.pdbqt",
+      "pdbqt_sha256": "0d8a23410b1b2e66bd5a5cc99adce595dcd2803d5d5d18b46636484564c4c409",
+      "scientific_admission": false,
+      "target": "ABCB1"
+    },
+    {
+      "apo": false,
+      "box_file": "9CTC/box.json",
+      "box_file_sha256": "440773ac01276b76fa568d63899d9417ccb762e5132319422d6377258ed2024e",
+      "frame": "V1-original",
+      "historical_results": {
+        "gnina": {
+          "apo": "False",
+          "original_method_status": "FAIL",
+          "reason": "",
+          "top10_status": "NO_HIT_AVAILABLE_TOP10_INCOMPLETE"
+        },
+        "vina": {
+          "apo": "False",
+          "original_method_status": "FAIL",
+          "reason": "",
+          "top10_status": "NO_HIT_AVAILABLE_TOP10_INCOMPLETE"
+        }
+      },
+      "id": "9CTC",
+      "limitations": [
+        "His/protonation conventions retained; no full hydrogen network validation",
+        "Existing native pose recovery results unchanged; apo has probe-only evidence",
+        "PRIMARY_EXISTING_QC is a relative workflow tier, not proof of defect-free chemistry"
+      ],
+      "origin": {
+        "campaign": "docking_8372_20261025",
+        "pdb_entry": "9CTC",
+        "receptor_source_relative": "reference_work/Phase6_receptor_lastpass_20261018T041858Z/PRIMARY_EXISTING_INPUTS/9CTC/receptor.pdbqt"
+      },
+      "pdbqt": "9CTC/receptor.pdbqt",
+      "pdbqt_sha256": "c87c3a3e090e49f50e0dbdc2995ec33f0824675f8ceb2d7825bb302d13d1cb00",
+      "scientific_admission": false,
+      "target": "ABCB1"
+    },
+    {
+      "apo": false,
+      "box_file": "9CTF/box.json",
+      "box_file_sha256": "5e211cc239342a49fa3df174212ac359bfcda18cb061060ca8b1118eeda1ab58",
+      "frame": "V1-original",
+      "historical_results": {
+        "gnina": {
+          "apo": "False",
+          "original_method_status": "FAIL",
+          "reason": "",
+          "top10_status": "TOP10_COVERAGE_PASS"
+        },
+        "vina": {
+          "apo": "False",
+          "original_method_status": "PASS",
+          "reason": "",
+          "top10_status": "TOP10_COVERAGE_PASS"
+        }
+      },
+      "id": "9CTF",
+      "limitations": [
+        "His/protonation conventions retained; no full hydrogen network validation",
+        "Existing native pose recovery results unchanged; apo has probe-only evidence",
+        "PRIMARY_EXISTING_QC is a relative workflow tier, not proof of defect-free chemistry"
+      ],
+      "origin": {
+        "campaign": "docking_8372_20261025",
+        "pdb_entry": "9CTF",
+        "receptor_source_relative": "reference_work/Phase6_receptor_lastpass_20261018T041858Z/PRIMARY_EXISTING_INPUTS/9CTF/receptor.pdbqt"
+      },
+      "pdbqt": "9CTF/receptor.pdbqt",
+      "pdbqt_sha256": "62613815022265c32fb0643fc8d0d4ce8ac506f491246e8e889850d5a97ea08f",
+      "scientific_admission": false,
+      "target": "ABCB1"
+    }
+  ],
+  "scope": "Six existing rigid receptor inputs; historical limits retained; no claim of new target-specific screening validation"
+}

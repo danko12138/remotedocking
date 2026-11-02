@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abcb1-abcg2-zinc22"
+version = "0.1.0"
+description = "Portable, traceable ABCB1/ABCG2 ZINC22 docking pilot"
+requires-python = ">=3.12"
+
+[project.scripts]
+zincscreen = "zincscreen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

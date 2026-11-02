@@ -1,0 +1,32 @@
+{
+  "embedded_stereo_smiles": "O[C@@H](COc1cccc2ncccc12)CN1CCN([C@@H]2c3ccccc3[C@@H]3[C@H](c4ccccc42)C3(F)F)CC1",
+  "heavy_atoms": 39,
+  "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+  "mapping_sha256": "cbb84f501124de4be2ef63a5b9765db5d5b185e4f4779f32ed47dcdc291777e8",
+  "method": {
+    "forcefield": "MMFF94s",
+    "kind": "ETKDGv3",
+    "optimization_code": 0,
+    "optimization_converged": true,
+    "rdkit_version": "2026.03.1",
+    "seed": 42
+  },
+  "pdbqt": "structures/IHOVFYSQUDPMCN-DBEBIPAYSA-N/ligand.pdbqt",
+  "pdbqt_sha256": "f3cdfacbd449238b6da3e02913e23a7630f2fe0f4ca22d385a21aa14b861e728",
+  "preparation_attempts": [
+    {
+      "forcefield": "MMFF94s",
+      "optimization_code": 0,
+      "seed": 42
+    }
+  ],
+  "preparation_version": "host-preparation-20261027",
+  "receipt_sha256": "306ada8f3d19a3bee0c414ab9f11636e594122e1a5b55792910c63b5e5d865b2",
+  "sdf": "structures/IHOVFYSQUDPMCN-DBEBIPAYSA-N/ligand.sdf",
+  "sdf_sha256": "73ec0d2934f9a859e4a0ed30f0c47fbeca72d58a51861179320630ef4c71f8f0",
+  "source_formal_charge": 0,
+  "source_inchikey": "IHOVFYSQUDPMCN-DBEBIPAYSA-N",
+  "source_smiles": "O[C@@H](COc1cccc2ncccc12)CN1CCN([C@@H]2c3ccccc3[C@@H]3[C@H](c4ccccc42)C3(F)F)CC1",
+  "status": "READY",
+  "unspecified_source_stereo": false
+}

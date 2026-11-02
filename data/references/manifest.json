@@ -1,0 +1,523 @@
+{
+  "compounds": [
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "LGGHDPFKSSRQNS-UHFFFAOYSA-N/ligand.pdbqt",
+          "sha256": "25e3b8a057155ce361c9f5c13b056979a6638466d7bb1e6137b3e4cf4183086d"
+        },
+        "ligand.sdf": {
+          "path": "LGGHDPFKSSRQNS-UHFFFAOYSA-N/ligand.sdf",
+          "sha256": "8ce2c5e63b87f045f56c0e05061b489876e9b91a8f77cc3bb6ee6b9faf6ecd3c"
+        }
+      },
+      "id": "REF_LGGHDPFKSSRQNS-UHFFFAOYSA-N",
+      "inchikey": "LGGHDPFKSSRQNS-UHFFFAOYSA-N",
+      "label_admission_required": false,
+      "name": "TARIQUIDAR",
+      "origin_molecule_id": 3515,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cc(OC)c(OC)cc3NC(=O)c3cnc4ccccc4c3)cc1)CC2",
+      "source_preparation": {
+        "embedded_stereo_smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cc(OC)c(OC)cc3NC(=O)c3cnc4ccccc4c3)cc1)CC2",
+        "heavy_atoms": 48,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "d99defda20e2422bf93a86938e5abfa4a464270f123d813f4b3857dc9bf84f47",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/LGGHDPFKSSRQNS-UHFFFAOYSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "25e3b8a057155ce361c9f5c13b056979a6638466d7bb1e6137b3e4cf4183086d",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "receipt_sha256": "9e4fc4c81a7cfdac2541115b081eba06a68e9a22e949ec649f2d1a3c48bcb3ec",
+        "sdf": "structures/LGGHDPFKSSRQNS-UHFFFAOYSA-N/ligand.sdf",
+        "sdf_sha256": "8ce2c5e63b87f045f56c0e05061b489876e9b91a8f77cc3bb6ee6b9faf6ecd3c",
+        "source_formal_charge": 0,
+        "source_inchikey": "LGGHDPFKSSRQNS-UHFFFAOYSA-N",
+        "source_smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cc(OC)c(OC)cc3NC(=O)c3cnc4ccccc4c3)cc1)CC2",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "IHOVFYSQUDPMCN-DBEBIPAYSA-N/ligand.pdbqt",
+          "sha256": "f3cdfacbd449238b6da3e02913e23a7630f2fe0f4ca22d385a21aa14b861e728"
+        },
+        "ligand.sdf": {
+          "path": "IHOVFYSQUDPMCN-DBEBIPAYSA-N/ligand.sdf",
+          "sha256": "73ec0d2934f9a859e4a0ed30f0c47fbeca72d58a51861179320630ef4c71f8f0"
+        }
+      },
+      "id": "REF_IHOVFYSQUDPMCN-DBEBIPAYSA-N",
+      "inchikey": "IHOVFYSQUDPMCN-DBEBIPAYSA-N",
+      "label_admission_required": false,
+      "name": "ZOSUQUIDAR",
+      "origin_molecule_id": 9463,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "O[C@@H](COc1cccc2ncccc12)CN1CCN([C@@H]2c3ccccc3[C@@H]3[C@H](c4ccccc42)C3(F)F)CC1",
+      "source_preparation": {
+        "embedded_stereo_smiles": "O[C@@H](COc1cccc2ncccc12)CN1CCN([C@@H]2c3ccccc3[C@@H]3[C@H](c4ccccc42)C3(F)F)CC1",
+        "heavy_atoms": 39,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "cbb84f501124de4be2ef63a5b9765db5d5b185e4f4779f32ed47dcdc291777e8",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/IHOVFYSQUDPMCN-DBEBIPAYSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "f3cdfacbd449238b6da3e02913e23a7630f2fe0f4ca22d385a21aa14b861e728",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "preparation_version": "host-preparation-20261027",
+        "receipt_sha256": "306ada8f3d19a3bee0c414ab9f11636e594122e1a5b55792910c63b5e5d865b2",
+        "sdf": "structures/IHOVFYSQUDPMCN-DBEBIPAYSA-N/ligand.sdf",
+        "sdf_sha256": "73ec0d2934f9a859e4a0ed30f0c47fbeca72d58a51861179320630ef4c71f8f0",
+        "source_formal_charge": 0,
+        "source_inchikey": "IHOVFYSQUDPMCN-DBEBIPAYSA-N",
+        "source_smiles": "O[C@@H](COc1cccc2ncccc12)CN1CCN([C@@H]2c3ccccc3[C@@H]3[C@H](c4ccccc42)C3(F)F)CC1",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "OSFCMRGOZNQUSW-UHFFFAOYSA-N/ligand.pdbqt",
+          "sha256": "090a767c1fd15a9cb81ce93bf6c9b8c578eeeeed9bd27b68b4c5df5d4563d28d"
+        },
+        "ligand.sdf": {
+          "path": "OSFCMRGOZNQUSW-UHFFFAOYSA-N/ligand.sdf",
+          "sha256": "04f25de387893b0049a2ffb03de1c34dd13a9c267ecc0a841b6dd88637357712"
+        }
+      },
+      "id": "REF_OSFCMRGOZNQUSW-UHFFFAOYSA-N",
+      "inchikey": "OSFCMRGOZNQUSW-UHFFFAOYSA-N",
+      "label_admission_required": false,
+      "name": "ELACRIDAR",
+      "origin_molecule_id": 4695,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cccc4c(=O)c5cccc(OC)c5[nH]c34)cc1)CC2",
+      "source_preparation": {
+        "embedded_stereo_smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cccc4c(=O)c5cccc(OC)c5[nH]c34)cc1)CC2",
+        "heavy_atoms": 42,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "beb4de0dc1a64501687bd6f5a51c2042a7093eb0b3eff18924afa5d85a48977c",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/OSFCMRGOZNQUSW-UHFFFAOYSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "090a767c1fd15a9cb81ce93bf6c9b8c578eeeeed9bd27b68b4c5df5d4563d28d",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "receipt_sha256": "2abed66dfc8ad644db7d0fd5b6bd61560b7032f4b9712fcb40581a8d6d11709b",
+        "sdf": "structures/OSFCMRGOZNQUSW-UHFFFAOYSA-N/ligand.sdf",
+        "sdf_sha256": "04f25de387893b0049a2ffb03de1c34dd13a9c267ecc0a841b6dd88637357712",
+        "source_formal_charge": 0,
+        "source_inchikey": "OSFCMRGOZNQUSW-UHFFFAOYSA-N",
+        "source_smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cccc4c(=O)c5cccc(OC)c5[nH]c34)cc1)CC2",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "NXNRAECHCJZNRF-JBACZVJFSA-N/ligand.pdbqt",
+          "sha256": "e74d3719af1f2c5e7e53385ccbe02403019f815f7b7188da06054456d5269e84"
+        },
+        "ligand.sdf": {
+          "path": "NXNRAECHCJZNRF-JBACZVJFSA-N/ligand.sdf",
+          "sha256": "d942d44bd24b8b75abaeefbb75ff1167bea9dae787d76021f747b954985ad7d3"
+        }
+      },
+      "id": "REF_NXNRAECHCJZNRF-JBACZVJFSA-N",
+      "inchikey": "NXNRAECHCJZNRF-JBACZVJFSA-N",
+      "label_admission_required": false,
+      "name": "KO143",
+      "origin_molecule_id": 4423,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "COc1ccc2c3c([nH]c2c1)[C@H](CC(C)C)N1C(=O)[C@H](CCC(=O)OC(C)(C)C)NC(=O)[C@@H]1C3",
+      "source_preparation": {
+        "embedded_stereo_smiles": "COc1ccc2c3c([nH]c2c1)[C@H](CC(C)C)N1C(=O)[C@H](CCC(=O)OC(C)(C)C)NC(=O)[C@@H]1C3",
+        "heavy_atoms": 34,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "9757653318e79b523a3439e1424e6fab1a83c32aeea7c07854a43ae3b82c26ae",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/NXNRAECHCJZNRF-JBACZVJFSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "e74d3719af1f2c5e7e53385ccbe02403019f815f7b7188da06054456d5269e84",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "receipt_sha256": "50a3154d467765b6820f19f69e5fc9a3d531be484206343b4b50f2523010c240",
+        "sdf": "structures/NXNRAECHCJZNRF-JBACZVJFSA-N/ligand.sdf",
+        "sdf_sha256": "d942d44bd24b8b75abaeefbb75ff1167bea9dae787d76021f747b954985ad7d3",
+        "source_formal_charge": 0,
+        "source_inchikey": "NXNRAECHCJZNRF-JBACZVJFSA-N",
+        "source_smiles": "COc1ccc2c3c([nH]c2c1)[C@H](CC(C)C)N1C(=O)[C@H](CCC(=O)OC(C)(C)C)NC(=O)[C@@H]1C3",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "KKZJGLLVHKMTCM-UHFFFAOYSA-N/ligand.pdbqt",
+          "sha256": "28f69d82ca0c9847da10417e32be147d7d6a409b7a8ad925eacb6cab8c34e9b8"
+        },
+        "ligand.sdf": {
+          "path": "KKZJGLLVHKMTCM-UHFFFAOYSA-N/ligand.sdf",
+          "sha256": "d96884da9948bb939deb977272eae1ff3f1580057b1144e61d22b8e524d749dc"
+        }
+      },
+      "id": "REF_KKZJGLLVHKMTCM-UHFFFAOYSA-N",
+      "inchikey": "KKZJGLLVHKMTCM-UHFFFAOYSA-N",
+      "label_admission_required": false,
+      "name": "MITOXANTRONE",
+      "origin_molecule_id": 3214,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "O=C1c2c(O)ccc(O)c2C(=O)c2c(NCCNCCO)ccc(NCCNCCO)c21",
+      "source_preparation": {
+        "embedded_stereo_smiles": "O=C1c2c(O)ccc(O)c2C(=O)c2c(NCCNCCO)ccc(NCCNCCO)c21",
+        "heavy_atoms": 32,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "da7c1b7a39f884f9bfaf26b284250830616b9bd00ba09af5e8c6e36800444b48",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/KKZJGLLVHKMTCM-UHFFFAOYSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "28f69d82ca0c9847da10417e32be147d7d6a409b7a8ad925eacb6cab8c34e9b8",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "receipt_sha256": "e7639efa507d0ad46637d09ff828a936e3070410efead8bd608b57fcce780080",
+        "sdf": "structures/KKZJGLLVHKMTCM-UHFFFAOYSA-N/ligand.sdf",
+        "sdf_sha256": "d96884da9948bb939deb977272eae1ff3f1580057b1144e61d22b8e524d749dc",
+        "source_formal_charge": 0,
+        "source_inchikey": "KKZJGLLVHKMTCM-UHFFFAOYSA-N",
+        "source_smiles": "O=C1c2c(O)ccc(O)c2C(=O)c2c(NCCNCCO)ccc(NCCNCCO)c21",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "UCFGDBYHRUNTLO-QHCPKHFHSA-N/ligand.pdbqt",
+          "sha256": "df026e347b89d223b71d495c29c120c8d26191e572a140665ef539eb731b9067"
+        },
+        "ligand.sdf": {
+          "path": "UCFGDBYHRUNTLO-QHCPKHFHSA-N/ligand.sdf",
+          "sha256": "3763e1fc5a9ca30c822a55635f829ae9ac7030b1fa2591a1465a71e368be3591"
+        }
+      },
+      "id": "REF_UCFGDBYHRUNTLO-QHCPKHFHSA-N",
+      "inchikey": "UCFGDBYHRUNTLO-QHCPKHFHSA-N",
+      "label_admission_required": false,
+      "name": "TOPOTECAN",
+      "origin_molecule_id": 6289,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1",
+      "source_preparation": {
+        "embedded_stereo_smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1",
+        "heavy_atoms": 31,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "9ea998895d54b4630ee96edf54e6d6fa337156fdade55ea3b9c0e1727ce9de18",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "repairs/maintenance_20261027/UCFGDBYHRUNTLO-QHCPKHFHSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "df026e347b89d223b71d495c29c120c8d26191e572a140665ef539eb731b9067",
+        "preparation_attempts": [
+          {
+            "error": "Specified source stereochemistry changed during embedding",
+            "kind": "REUSED_3D",
+            "source_sha256": "8288af9d0246165f8f93e7d6bafbf7ff37ccca24cf537c1050adb8fc26dceff8",
+            "status": "REJECTED_STEREO"
+          },
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "preparation_version": "host-preparation-20261027",
+        "receipt_sha256": "981e3bc1a73de05cbb2404d4d4d3673c8ff2c2da533317f682cd7d09b60c525c",
+        "repair_provenance": {
+          "original_campaign_id": "docking_8372_20261025",
+          "previous_failure_path": "/run/media/danko12138/abc/docking_8372_20261025/inputs/structures/UCFGDBYHRUNTLO-QHCPKHFHSA-N/PREPARATION_FAILED.json",
+          "previous_failure_sha256": "d6df2bd2c4dd9f82b4474569fb0959b77259cb4a5917d0dc1be66447d2b25be8",
+          "prior_error": "Specified source stereochemistry changed during embedding",
+          "repair_id": "preparation-maintenance-20261027:6289"
+        },
+        "sdf": "repairs/maintenance_20261027/UCFGDBYHRUNTLO-QHCPKHFHSA-N/ligand.sdf",
+        "sdf_sha256": "3763e1fc5a9ca30c822a55635f829ae9ac7030b1fa2591a1465a71e368be3591",
+        "source_formal_charge": 0,
+        "source_inchikey": "UCFGDBYHRUNTLO-QHCPKHFHSA-N",
+        "source_smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "AAKJLRGGTJKAMG-UHFFFAOYSA-N/ligand.pdbqt",
+          "sha256": "a6e76d6a24d72e489c5b4ff4492580f758d2f56e39917c79fb54978302ea3e3f"
+        },
+        "ligand.sdf": {
+          "path": "AAKJLRGGTJKAMG-UHFFFAOYSA-N/ligand.sdf",
+          "sha256": "b566ff67fd184a828a889a8e81cdee93fea28ca56eec7f7a92e9415de8533669"
+        }
+      },
+      "id": "REF_AAKJLRGGTJKAMG-UHFFFAOYSA-N",
+      "inchikey": "AAKJLRGGTJKAMG-UHFFFAOYSA-N",
+      "label_admission_required": false,
+      "name": "erlotinib",
+      "origin_molecule_id": 14,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+      "source_preparation": {
+        "embedded_stereo_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+        "heavy_atoms": 29,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "a41c0502e4f9e243a7e20adc5ec0c10fa68e7f01fc53e9aa04516fac7be3bbfc",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/AAKJLRGGTJKAMG-UHFFFAOYSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "a6e76d6a24d72e489c5b4ff4492580f758d2f56e39917c79fb54978302ea3e3f",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "receipt_sha256": "61992a395459fc254ebe6f7cebfd30bde86299592fe05543a114dd5e189353d1",
+        "sdf": "structures/AAKJLRGGTJKAMG-UHFFFAOYSA-N/ligand.sdf",
+        "sdf_sha256": "b566ff67fd184a828a889a8e81cdee93fea28ca56eec7f7a92e9415de8533669",
+        "source_formal_charge": 0,
+        "source_inchikey": "AAKJLRGGTJKAMG-UHFFFAOYSA-N",
+        "source_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "XGALLCVXEZPNRQ-UHFFFAOYSA-N/ligand.pdbqt",
+          "sha256": "f6a7c9e60fb85e3fc2654beb2f86e57c8996f7b115dffac8fb0c4d69cdbaac7d"
+        },
+        "ligand.sdf": {
+          "path": "XGALLCVXEZPNRQ-UHFFFAOYSA-N/ligand.sdf",
+          "sha256": "1f4d22967dd5ce0264347de612710a38b8cadbbd10c02844fc028d4ed4133918"
+        }
+      },
+      "id": "REF_XGALLCVXEZPNRQ-UHFFFAOYSA-N",
+      "inchikey": "XGALLCVXEZPNRQ-UHFFFAOYSA-N",
+      "label_admission_required": false,
+      "name": "GEFITINIB",
+      "origin_molecule_id": 7386,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1",
+      "source_preparation": {
+        "embedded_stereo_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1",
+        "heavy_atoms": 31,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "0f31a1e785b7ed67e7216a32a5416ef16fcfe67d36b49a1863a570c4de688401",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/XGALLCVXEZPNRQ-UHFFFAOYSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "f6a7c9e60fb85e3fc2654beb2f86e57c8996f7b115dffac8fb0c4d69cdbaac7d",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "preparation_version": "host-preparation-20261027",
+        "receipt_sha256": "a9e2d264540ea24fd7fa107017edc92fabaa8e82246018a93f41a4b158b7ab57",
+        "sdf": "structures/XGALLCVXEZPNRQ-UHFFFAOYSA-N/ligand.sdf",
+        "sdf_sha256": "1f4d22967dd5ce0264347de612710a38b8cadbbd10c02844fc028d4ed4133918",
+        "source_formal_charge": 0,
+        "source_inchikey": "XGALLCVXEZPNRQ-UHFFFAOYSA-N",
+        "source_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "KTUFNOKKBVMGRW-UHFFFAOYSA-N/ligand.pdbqt",
+          "sha256": "29f2703ab7299a986bb82d0c29308794111fda09a5a519c8041fbe71f853da8e"
+        },
+        "ligand.sdf": {
+          "path": "KTUFNOKKBVMGRW-UHFFFAOYSA-N/ligand.sdf",
+          "sha256": "1d387d7211dd398a6bd8642828fdee5fd249522dc2cc3d7943be44c43c2788c9"
+        }
+      },
+      "id": "REF_KTUFNOKKBVMGRW-UHFFFAOYSA-N",
+      "inchikey": "KTUFNOKKBVMGRW-UHFFFAOYSA-N",
+      "label_admission_required": false,
+      "name": "IMATINIB",
+      "origin_molecule_id": 3347,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1",
+      "source_preparation": {
+        "embedded_stereo_smiles": "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1",
+        "heavy_atoms": 37,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "2b761aef7a18e3566f51f166a6de67364f6ed885050ab1c046b3bd9db8fc72dc",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/KTUFNOKKBVMGRW-UHFFFAOYSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "29f2703ab7299a986bb82d0c29308794111fda09a5a519c8041fbe71f853da8e",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "receipt_sha256": "82f721239f349e8fa7c8902b5d9fdcb8befb429bb7341a91ebfcca46a92557d2",
+        "sdf": "structures/KTUFNOKKBVMGRW-UHFFFAOYSA-N/ligand.sdf",
+        "sdf_sha256": "1d387d7211dd398a6bd8642828fdee5fd249522dc2cc3d7943be44c43c2788c9",
+        "source_formal_charge": 0,
+        "source_inchikey": "KTUFNOKKBVMGRW-UHFFFAOYSA-N",
+        "source_smiles": "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    },
+    {
+      "files": {
+        "ligand.pdbqt": {
+          "path": "NCEXYHBECQHGNR-QZQOTICOSA-N/ligand.pdbqt",
+          "sha256": "e231746fb1d1dec925d80038ec22386fe1f0c9e8cce7e17a4aa55162e271b391"
+        },
+        "ligand.sdf": {
+          "path": "NCEXYHBECQHGNR-QZQOTICOSA-N/ligand.sdf",
+          "sha256": "a2fb3d2912a9f0a4da310c6aa1432291558f82b3277da304180464983b814709"
+        }
+      },
+      "id": "REF_NCEXYHBECQHGNR-QZQOTICOSA-N",
+      "inchikey": "NCEXYHBECQHGNR-QZQOTICOSA-N",
+      "label_admission_required": false,
+      "name": "SULFASALAZINE",
+      "origin_molecule_id": 10220,
+      "role": "Workflow/reference compound, not a guaranteed active/selective control",
+      "smiles": "O=C(O)c1cc(/N=N/c2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O",
+      "source_preparation": {
+        "embedded_stereo_smiles": "O=C(O)c1cc(/N=N/c2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O",
+        "heavy_atoms": 28,
+        "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+        "mapping_sha256": "40cf83207ab882ab9ca5135b9ab25312200329e6808dafbdd81f0fa368801221",
+        "method": {
+          "forcefield": "MMFF94s",
+          "kind": "ETKDGv3",
+          "optimization_code": 0,
+          "optimization_converged": true,
+          "rdkit_version": "2026.03.1",
+          "seed": 42
+        },
+        "pdbqt": "structures/NCEXYHBECQHGNR-QZQOTICOSA-N/ligand.pdbqt",
+        "pdbqt_sha256": "e231746fb1d1dec925d80038ec22386fe1f0c9e8cce7e17a4aa55162e271b391",
+        "preparation_attempts": [
+          {
+            "forcefield": "MMFF94s",
+            "optimization_code": 0,
+            "seed": 42
+          }
+        ],
+        "preparation_version": "host-preparation-20261027",
+        "receipt_sha256": "55a6b20d182df99178f61f522a6a47e19fb20af68d32e9733d1fe9d32a043bb6",
+        "sdf": "structures/NCEXYHBECQHGNR-QZQOTICOSA-N/ligand.sdf",
+        "sdf_sha256": "a2fb3d2912a9f0a4da310c6aa1432291558f82b3277da304180464983b814709",
+        "source_formal_charge": 0,
+        "source_inchikey": "NCEXYHBECQHGNR-QZQOTICOSA-N",
+        "source_smiles": "O=C(O)c1cc(/N=N/c2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O",
+        "status": "READY",
+        "unspecified_source_stereo": false
+      }
+    }
+  ],
+  "identity_selection": "Explicit existing molecule IDs/full keys; names are descriptive only",
+  "scope": "Ten existing prepared inputs; biological labels do not gate library screening"
+}

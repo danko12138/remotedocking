@@ -1,0 +1,51 @@
+{
+  "GNINA_engine_tested": false,
+  "GPU_engine_tested": false,
+  "engine_executable": "External local test executable; set your own path on Churchill",
+  "engine_version": "Vina 1.2.7",
+  "fixtures_are_real_ZINC_records": false,
+  "latest_smoke_run_real_Vina_jobs_DONE": 4,
+  "local_test_environment": {
+    "openbabel": "3.2.1",
+    "python": "3.12",
+    "rdkit": "2026.03.1"
+  },
+  "observed_utc": "2026-11-02T02:52:05.379979+00:00",
+  "parameters": {
+    "backend": "vina",
+    "cpu_threads": 1,
+    "device": 0,
+    "energy_range": 5.0,
+    "executable": "vina (external Vina 1.2.7 executable)",
+    "exhaustiveness": 1,
+    "num_modes": 3,
+    "timeout_seconds": 90,
+    "use_gpu": false
+  },
+  "raw_validation_directory_name": "remote_docking_validation_20261101",
+  "reference_inputs_checked": 10,
+  "references_READY": 10,
+  "remote_tested": false,
+  "resumed_engine_launches": 0,
+  "resumed_jobs_reused": 4,
+  "scientific_validation": false,
+  "status": "PASS_LOCAL_CPU_VINA_SMOKE",
+  "synthetic_inputs_READY": 2,
+  "synthetic_multicomponent_retained_failed": 1,
+  "tests": {
+    "coverage": [
+      "bounded compressed sampling and provenance",
+      "invalid ZINC identity records",
+      "source key and multi-component rejection",
+      "native coordinate mapping and charge sums (+1/-1)",
+      "truncated/empty poses rejected",
+      "positive energies retained",
+      "resume without docking again",
+      "analysis-only recovery after engine completion",
+      "modified completed output rejected",
+      "GPU busy holds dispatch"
+    ],
+    "failed": 0,
+    "passed": 12
+  }
+}

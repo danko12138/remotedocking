@@ -1,0 +1,31 @@
+{
+  "embedded_stereo_smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cc(OC)c(OC)cc3NC(=O)c3cnc4ccccc4c3)cc1)CC2",
+  "heavy_atoms": 48,
+  "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+  "mapping_sha256": "d99defda20e2422bf93a86938e5abfa4a464270f123d813f4b3857dc9bf84f47",
+  "method": {
+    "forcefield": "MMFF94s",
+    "kind": "ETKDGv3",
+    "optimization_code": 0,
+    "optimization_converged": true,
+    "rdkit_version": "2026.03.1",
+    "seed": 42
+  },
+  "pdbqt": "structures/LGGHDPFKSSRQNS-UHFFFAOYSA-N/ligand.pdbqt",
+  "pdbqt_sha256": "25e3b8a057155ce361c9f5c13b056979a6638466d7bb1e6137b3e4cf4183086d",
+  "preparation_attempts": [
+    {
+      "forcefield": "MMFF94s",
+      "optimization_code": 0,
+      "seed": 42
+    }
+  ],
+  "receipt_sha256": "9e4fc4c81a7cfdac2541115b081eba06a68e9a22e949ec649f2d1a3c48bcb3ec",
+  "sdf": "structures/LGGHDPFKSSRQNS-UHFFFAOYSA-N/ligand.sdf",
+  "sdf_sha256": "8ce2c5e63b87f045f56c0e05061b489876e9b91a8f77cc3bb6ee6b9faf6ecd3c",
+  "source_formal_charge": 0,
+  "source_inchikey": "LGGHDPFKSSRQNS-UHFFFAOYSA-N",
+  "source_smiles": "COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cc(OC)c(OC)cc3NC(=O)c3cnc4ccccc4c3)cc1)CC2",
+  "status": "READY",
+  "unspecified_source_stereo": false
+}

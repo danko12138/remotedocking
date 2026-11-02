@@ -1,0 +1,45 @@
+{
+  "embedded_stereo_smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1",
+  "heavy_atoms": 31,
+  "limitation": "Single representative geometry; unresolved source stereo is not experimentally assigned",
+  "mapping_sha256": "9ea998895d54b4630ee96edf54e6d6fa337156fdade55ea3b9c0e1727ce9de18",
+  "method": {
+    "forcefield": "MMFF94s",
+    "kind": "ETKDGv3",
+    "optimization_code": 0,
+    "optimization_converged": true,
+    "rdkit_version": "2026.03.1",
+    "seed": 42
+  },
+  "pdbqt": "repairs/maintenance_20261027/UCFGDBYHRUNTLO-QHCPKHFHSA-N/ligand.pdbqt",
+  "pdbqt_sha256": "df026e347b89d223b71d495c29c120c8d26191e572a140665ef539eb731b9067",
+  "preparation_attempts": [
+    {
+      "error": "Specified source stereochemistry changed during embedding",
+      "kind": "REUSED_3D",
+      "source_sha256": "8288af9d0246165f8f93e7d6bafbf7ff37ccca24cf537c1050adb8fc26dceff8",
+      "status": "REJECTED_STEREO"
+    },
+    {
+      "forcefield": "MMFF94s",
+      "optimization_code": 0,
+      "seed": 42
+    }
+  ],
+  "preparation_version": "host-preparation-20261027",
+  "receipt_sha256": "981e3bc1a73de05cbb2404d4d4d3673c8ff2c2da533317f682cd7d09b60c525c",
+  "repair_provenance": {
+    "original_campaign_id": "docking_8372_20261025",
+    "previous_failure_path": "/run/media/danko12138/abc/docking_8372_20261025/inputs/structures/UCFGDBYHRUNTLO-QHCPKHFHSA-N/PREPARATION_FAILED.json",
+    "previous_failure_sha256": "d6df2bd2c4dd9f82b4474569fb0959b77259cb4a5917d0dc1be66447d2b25be8",
+    "prior_error": "Specified source stereochemistry changed during embedding",
+    "repair_id": "preparation-maintenance-20261027:6289"
+  },
+  "sdf": "repairs/maintenance_20261027/UCFGDBYHRUNTLO-QHCPKHFHSA-N/ligand.sdf",
+  "sdf_sha256": "3763e1fc5a9ca30c822a55635f829ae9ac7030b1fa2591a1465a71e368be3591",
+  "source_formal_charge": 0,
+  "source_inchikey": "UCFGDBYHRUNTLO-QHCPKHFHSA-N",
+  "source_smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1",
+  "status": "READY",
+  "unspecified_source_stereo": false
+}
